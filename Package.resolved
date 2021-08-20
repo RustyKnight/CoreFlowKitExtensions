@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "FlowKit",
+        "repositoryURL": "https://github.com/RustyKnight/FlowKit",
+        "state": {
+          "branch": null,
+          "revision": "e9f876c27d021d3208227dca15d89eedf67fb577",
+          "version": "0.7.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
