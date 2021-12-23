@@ -10,7 +10,7 @@ import Foundation
 import FlowKit
 import UIKit
 
-extension TableDirector {
+public extension TableDirector {
 	
 	func indexPath(for model: ModelProtocol) -> IndexPath? {
 		let foundIndex = sections.firstIndex { (section) -> Bool in

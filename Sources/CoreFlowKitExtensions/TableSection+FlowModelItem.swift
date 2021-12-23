@@ -9,11 +9,11 @@
 import Foundation
 import FlowKit
 
-extension TableSection {
-	
-	func remove(_ item: ModelProtocol) {
-    guard let index = (models.firstIndex { $0.modelID == item.modelID }) else { return }
-		remove(at: index)
-	}
-	
+public extension TableSection {
+    
+    func remove(_ item: ModelProtocol) {
+        guard let index = (models.firstIndex { $0.modelID == item.modelID }) else { return }
+        remove(at: index)
+    }
+    
 }

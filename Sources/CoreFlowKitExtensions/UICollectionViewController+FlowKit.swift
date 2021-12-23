@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import FlowKit
 
-extension UICollectionViewController {
+public extension UICollectionViewController {
 	
 	var director: FlowCollectionDirector {
 		return collectionView.director

@@ -9,9 +9,9 @@
 import Foundation
 import FlowKit
 
-extension CollectionDirector {
+public extension CollectionDirector {
 	
-	func model(at indexPath: IndexPath) -> ModelProtocol? {
+    func model(at indexPath: IndexPath) -> ModelProtocol? {
 		guard let section = section(at: indexPath.section) else { return nil }
 		return section.model(at: indexPath.row)
 	}

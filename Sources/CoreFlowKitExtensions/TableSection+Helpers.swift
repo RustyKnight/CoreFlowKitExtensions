@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import FlowKit
 
-extension TableSection {
+public extension TableSection {
 	
 	convenience init() {
 		self.init(headerTitle: nil, footerTitle: nil)

@@ -10,9 +10,9 @@ import Foundation
 import FlowKit
 import UIKit
 
-extension CollectionSection {
+public extension CollectionSection {
 
-	static func emptyHeader(height: CGFloat = 0.0001, backgroundColor: UIColor = .white) -> CollectionSectionView<EmptyTableViewHeader> {
+    static func emptyHeader(height: CGFloat = 0.0001, backgroundColor: UIColor = .white) -> CollectionSectionView<EmptyTableViewHeader> {
 		let smallSectionHeaderView = CollectionSectionView<EmptyTableViewHeader>()
 		
 		smallSectionHeaderView.on.referenceSize = { ctx -> CGSize in

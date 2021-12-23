@@ -10,7 +10,7 @@ import Foundation
 import FlowKit
 import UIKit
 
-extension TableSection {
+public extension TableSection {
 
   static var groupedBackground: UIColor {
     if #available(iOS 13.0, *) {

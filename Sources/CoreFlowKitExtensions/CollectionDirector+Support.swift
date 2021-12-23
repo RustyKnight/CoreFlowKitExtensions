@@ -9,9 +9,9 @@
 import Foundation
 import FlowKit
 
-extension CollectionDirector {
+public extension CollectionDirector {
 	
-	func indexPath(for model: ModelProtocol) -> IndexPath? {
+    func indexPath(for model: ModelProtocol) -> IndexPath? {
 		for sectionIndex in 0..<sections.count {
 			let section = sections[sectionIndex]
 			for rowIndex in 0..<section.models.count {
@@ -23,7 +23,7 @@ extension CollectionDirector {
 		return nil
 	}
 
-	func indexPath(where matches: (ModelProtocol) -> Bool) -> IndexPath? {
+    func indexPath(where matches: (ModelProtocol) -> Bool) -> IndexPath? {
 		for sectionIndex in 0..<sections.count {
 			let section = sections[sectionIndex]
 			for rowIndex in 0..<section.models.count {
@@ -35,12 +35,12 @@ extension CollectionDirector {
 		return nil
 	}
 
-	func reload(_ model: ModelProtocol) {
+    func reload(_ model: ModelProtocol) {
 		guard let indexPath = self.indexPath(for: model) else { return }
 		collection?.reloadItems(at: [indexPath])
 	}
 
-	func reload(_ models: [ModelProtocol]) {
+    func reload(_ models: [ModelProtocol]) {
 		let paths = models.compactMap { indexPath(for: $0) }
 		guard !paths.isEmpty else { return }
 		collection?.reloadItems(at: paths)

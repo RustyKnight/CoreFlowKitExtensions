@@ -9,9 +9,9 @@
 import Foundation
 import FlowKit
 
-extension CollectionSection {
+public extension CollectionSection {
 	
-	func model(at index: Int) -> ModelProtocol? {
+    func model(at index: Int) -> ModelProtocol? {
 		guard index < models.count else { return nil }
 		return models[index]
 	}

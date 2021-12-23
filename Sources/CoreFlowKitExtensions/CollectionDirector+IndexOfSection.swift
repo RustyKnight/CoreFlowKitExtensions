@@ -9,9 +9,9 @@
 import Foundation
 import FlowKit
 
-extension CollectionDirector {
+public extension CollectionDirector {
 	
-	func indexOf(section: TableSection) -> Int? {
+    func indexOf(section: TableSection) -> Int? {
 		return sections.firstIndex { $0.UUID == section.UUID }
 	}
 	

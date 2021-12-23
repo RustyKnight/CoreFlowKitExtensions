@@ -9,6 +9,6 @@
 import UIKit
 import FlowKit
 
-class EmptyTableViewHeader: UITableViewHeaderFooterView {
+public class EmptyTableViewHeader: UITableViewHeaderFooterView {
 	
 }
